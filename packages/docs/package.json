@@ -1,0 +1,41 @@
+{
+  "name": "docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "dev": "storybook dev -p 6006",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "@soller-ui/eslint-config": "*",
+    "@soller-ui/react": "*",
+    "@soller-ui/tokens": "*",
+    "@soller-ui/ts-config": "*",
+    "@storybook/addon-a11y": "^7.5.1",
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.1",
+    "@storybook/addon-interactions": "^7.5.1",
+    "@storybook/addon-links": "^7.5.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.1",
+    "@storybook/react": "^7.5.1",
+    "@storybook/react-vite": "^7.5.1",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "@vitejs/plugin-react": "^4.0.3",
+    "storybook": "^7.5.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
