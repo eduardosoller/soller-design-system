@@ -27,19 +27,19 @@ export const Button = styled('button', {
     variant: {
       primary: {
         color: '$white',
-        background: '$ignite500',
+        background: '$soller500',
         '&:not(:disabled):hover': {
-          background: '$ignite300',
+          background: '$soller300',
         },
         '&:disabled': {
           backgroundColor: '$gray200',
         },
       },
       secondary: {
-        color: '$ignite300',
-        border: '2px solid $ignite500',
+        color: '$soller300',
+        border: '2px solid $soller500',
         '&:not(:disabled):hover': {
-          background: '$ignite500',
+          background: '$soller500',
           color: '$white',
         },
         '&:disabled': {
