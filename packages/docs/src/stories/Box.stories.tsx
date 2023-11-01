@@ -1,12 +1,19 @@
 import { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps } from '@soller-ui/react'
+import { Box, BoxProps, Text } from '@soller-ui/react'
 
 export default {
   title: 'Surfaces/Box',
   component: Box,
   args: {
-    children: (<>Elemento box</>)
-  }
+    children: <Text>Testando o elemento Box</Text>,
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 } as Meta<BoxProps>
 
 export const Primary: StoryObj<BoxProps> = {
