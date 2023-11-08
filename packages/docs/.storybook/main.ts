@@ -31,7 +31,7 @@ const config: StorybookConfig = {
 
   viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
-      config.base = "/design-system/";
+      config.base = "/soller-design-system/";
     }
     return config;
   },
