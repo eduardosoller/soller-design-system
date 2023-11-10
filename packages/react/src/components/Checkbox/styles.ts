@@ -13,8 +13,9 @@ export const CheckboxContainer = styled(Checkbox.Root, {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  marginRight: "$2",
   border: "2px solid $gray900",
-
+  gap: "$2",
   '&[data-state="checked"]': {
     backgroundColor: "$soller300",
   },
@@ -50,5 +51,3 @@ export const CheckboxIndicator = styled(Checkbox.Indicator, {
     animation: `${slideOut} 200ms ease-out`,
   },
 });
-
-CheckboxContainer.displayName = "Checkbox";
