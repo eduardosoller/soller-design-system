@@ -7,49 +7,49 @@ export default {
   args: {
     children: 'Send',
     variant: 'primary',
-    size: 'md'
+    size: 'md',
   },
   argTypes: {
     variant: {
       options: ['primary', 'secondary', 'tertiary'],
       control: {
-        type: 'inline-radio'
-      }
+        type: 'inline-radio',
+      },
     },
     size: {
       options: ['sm', 'md'],
       control: {
-        type: 'inline-radio'
-      }
+        type: 'inline-radio',
+      },
     },
     onClick: {
-      action: 'click'
+      action: 'click',
     },
     disabled: {
       control: {
-        type: 'boolean'
-      }
-    }
-  }
+        type: 'boolean',
+      },
+    },
+  },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
 export const Secondary: StoryObj<ButtonProps> = {
   args: {
     variant: 'secondary',
-    children: 'Create New'
-  }
+    children: 'Create New',
+  },
 }
 export const Terciary: StoryObj<ButtonProps> = {
   args: {
     variant: 'tertiary',
-    children: 'Cancel'
-  }
+    children: 'Cancel',
+  },
 }
 export const Small: StoryObj<ButtonProps> = {
   args: {
-    size: 'sm'
-  }
+    size: 'sm',
+  },
 }
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
@@ -70,11 +70,6 @@ export const WithIcon: StoryObj<ButtonProps> = {
 }
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
-    disabled: true
-  }
+    disabled: true,
+  },
 }
-
-
-
-
-

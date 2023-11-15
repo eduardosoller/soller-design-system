@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react'
-import { Box, Text, Checkbox, CheckboxProps } from '@soller-ui/react'
+import { Checkbox, CheckboxProps } from '@soller-ui/react'
 
 export default {
   title: 'Form/Checkbox',
@@ -10,9 +10,5 @@ export default {
 export const Primary: StoryObj<CheckboxProps> = {
   args: {
     children: 'Accept the terms',
-  }
+  },
 }
-
-
-
-

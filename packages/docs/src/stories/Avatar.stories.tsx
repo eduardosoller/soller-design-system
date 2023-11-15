@@ -6,23 +6,20 @@ export default {
   component: Avatar,
   args: {
     src: 'https://github.com/eduardosoller.png',
-    alt: 'Eduardo Soller'
+    alt: 'Eduardo Soller',
   },
   argTypes: {
     src: {
       control: {
-        type: 'text'
-      }
-    }
-  }
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
 export const WithFallback: StoryObj<AvatarProps> = {
   args: {
-    src: undefined
-  }
+    src: undefined,
+  },
 }
-
-
-

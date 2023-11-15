@@ -6,27 +6,27 @@ export default {
   component: MultiStep,
   args: {
     size: 4,
-    currentStep: 1
+    currentStep: 1,
   },
   decorators: [
     (Story) => {
       return (
-        <Box as='label' css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}>
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+        >
           {Story()}
         </Box>
       )
-    }
-  ]
+    },
+  ],
 } as Meta<MultiStepProps>
 
 export const Primary: StoryObj<MultiStepProps> = {
-  args: {}
+  args: {},
 }
 export const Full: StoryObj<MultiStepProps> = {
   args: {
-    currentStep: 4
-  }
+    currentStep: 4,
+  },
 }
-
-
-

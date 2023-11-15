@@ -1,32 +1,32 @@
-import { styled } from "../../styles";
-import { Text } from "../Text";
+import { styled } from '../../styles'
+import { Text } from '../Text'
 
-export const MultiStepContainer = styled("div", {});
+export const MultiStepContainer = styled('div', {})
 
-export const Steps = styled("div", {
-  display: "grid",
-  gridTemplateColumns: "repeat(var(--steps-size), 1fr)",
-  gap: "$2",
-  marginTop: "$1",
-});
+export const Steps = styled('div', {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(var(--steps-size), 1fr)',
+  gap: '$2',
+  marginTop: '$1',
+})
 
-export const Step = styled("div", {
-  height: "$1",
-  borderRadius: "$px",
-  backgroundColor: "$gray600",
+export const Step = styled('div', {
+  height: '$1',
+  borderRadius: '$px',
+  backgroundColor: '$gray600',
   variants: {
     active: {
       true: {
-        backgroundColor: "$gray100",
+        backgroundColor: '$gray100',
       },
     },
   },
-});
+})
 
 export const Label = styled(Text, {
-  color: "$gray200",
+  color: '$gray200',
   defaultVariants: {
-    fontSize: "$xs",
+    fontSize: '$xs',
   },
-});
-MultiStepContainer.displayName = "MultiStepContainer";
+})
+MultiStepContainer.displayName = 'MultiStepContainer'

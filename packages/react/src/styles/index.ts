@@ -6,8 +6,8 @@ import {
   lineHeights,
   radii,
   space,
-} from "@soller-ui/tokens";
-import { createStitches, defaultThemeMap } from "@stitches/react";
+} from '@soller-ui/tokens'
+import { createStitches, defaultThemeMap } from '@stitches/react'
 export const {
   styled,
   css,
@@ -20,8 +20,8 @@ export const {
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
-    height: "space",
-    width: "space",
+    height: 'space',
+    width: 'space',
   },
   theme: {
     colors,
@@ -32,4 +32,4 @@ export const {
     radii,
     space,
   },
-});
+})
