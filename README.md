@@ -46,15 +46,14 @@ To start using the Design System, clone the repository into your local environme
    cd design-system
    npm install
    ```
-## Contribuindo
+## Contributing
+You can also help me improve and expand this project with enhancements and the creation of new components. To contribute, follow these steps:
 
-Você também pode me ajudar a aprimorar e expandir este projeto com melhorias e a criação de novos componentes. Para contribuir, siga estas etapas:
+1. Fork the repository.
+2. Create a new branch for your feature (git checkout -b feature/MyFeature).
+3. Commit your changes (git commit -am 'Added an awesome feature').
+4. Push to the branch (git push origin feature/MyFeature).
+5. Open a Pull Request.
 
-1. Faça um fork do repositório.
-2. Crie uma nova branch para sua funcionalidade (git checkout -b feature/MinhaFeature).
-3. Faça commit das suas alterações (git commit -am 'Adicionada uma funcionalidade incrível').
-4. Faça push para a branch (git push origin feature/MinhaFeature).
-5. Abra um Pull Request.
-
-## Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
