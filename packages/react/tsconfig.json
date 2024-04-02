@@ -1,4 +1,10 @@
 {
   "extends": "@soller-ui/ts-config/react.json",
-  "include": ["src"]
+  "include": ["src"],
+  "compilerOptions": {
+  "paths": {
+    "@styles": ["./src/styles/index"],
+    "@components/*": ["./src/components/*"]
+  }
+}
 }

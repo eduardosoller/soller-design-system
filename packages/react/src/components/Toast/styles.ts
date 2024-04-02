@@ -1,45 +1,46 @@
-import { styled, keyframes } from '../../styles'
-import { X } from 'phosphor-react'
-const slideIn = keyframes({
-  from: {
-    transform: 'translateX(100%)',
-  },
-  to: {
-    transform: 'translateX(0)',
-  },
-})
-const slideOut = keyframes({
-  from: {
-    transform: 'translateX(0)',
-  },
-  to: {
-    transform: 'translateX(100%)',
-  },
-})
+import { styled } from '@styles'
+import * as Toast from '@radix-ui/react-toast'
 
-export const ToastContainer = styled('div', {
-  padding: '$4',
-  borderRadius: '$md',
-  backgroundColor: '$gray800',
-  border: '1px solid $gray500',
+export const ToastProvider = Toast.Provider
+export const ToastContainer = styled(Toast.Root, {
+  backgroundColor: 'white',
+  borderRadius: '6px',
+  boxShadow:
+    'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
+  padding: '15px',
   display: 'flex',
-  alignContent: 'center',
-  justifyContent: 'space-between',
-  animation: `${slideIn} 2s ease-out`,
-  width: 'auto',
+  columnGap: '15px',
+  alignItems: 'center',
 })
-export const CloseButton = styled(X, {
-  padding: '$1',
-  borderRadius: '$sm',
-  color: '$gray400',
+export const ToastTitle = styled(Toast.Title, {
+  gridArea: 'title',
+  marginBottom: '5px',
+  fontWeight: 500,
+  color: '#ffffff',
+  fontSize: '15px',
+})
+export const ToastDescription = styled(Toast.Description, {
+  gridArea: 'description',
+  margin: 0,
+  color: '$gray500',
+  fontSize: '13px',
+  lineHeight: 1.3,
+})
+export const ToastAction = Toast.Action
+export const ToastClose = Toast.Close
+export const ToastViewport = styled(Toast.Viewport, {
+  // position: 'fixed',
+  // bottom: 0,
+  // right: 0,
   display: 'flex',
-  alignContent: 'center',
-  cursor: 'pointer',
-  position: 'absolute',
-  top: 20,
-  right: 20,
-  width: '$5',
-  height: '$5',
+  flexDirection: 'column',
+  padding: '5px',
+  gap: '10px',
+  width: '390px',
+  maxWidth: '100vw',
+  margin: 0,
+  listStyle: 'none',
+  zIndex: 2147483647,
+  outline: 'none',
 })
-
 ToastContainer.displayName = 'Toast'

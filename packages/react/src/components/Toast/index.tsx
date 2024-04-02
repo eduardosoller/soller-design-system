@@ -1,16 +1,34 @@
-import { ComponentProps, ElementType } from 'react'
-import { ToastContainer, CloseButton } from './styles'
+import { ComponentProps } from 'react'
+import {
+  ToastContainer,
+  ToastAction,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastViewport,
+  ToastTitle,
+} from './styles'
 
 export interface ToastProps extends ComponentProps<typeof ToastContainer> {
-  as?: ElementType
-  type: 'success' | 'error'
+  description: string
 }
 
-export function Toast({ children, ...props }: ToastProps) {
+export function Toast(
+  { children }: { children: React.ReactNode },
+  props: ToastProps,
+) {
   return (
-    <ToastContainer {...props}>
-      <div>{children}</div>
-      <CloseButton />
-    </ToastContainer>
+    <ToastProvider>
+      <ToastContainer duration={100000}>
+        <ToastTitle>{children}</ToastTitle>
+        <ToastDescription asChild>
+          <small>DESC-{props.description}</small>
+        </ToastDescription>
+        <ToastAction altText="Undo" />
+        <ToastClose />
+      </ToastContainer>
+      <ToastViewport />
+    </ToastProvider>
   )
 }
+Toast.displayName = 'Toast'

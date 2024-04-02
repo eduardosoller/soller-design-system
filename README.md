@@ -1,33 +1,33 @@
 # Soller Design System
 
-Bem-vindo ao repositório do meu Design System.
-Desenvolvi este projeto inicialmente para fins de estudo e também para que eu possa usar em meus projetos pessoais. Fique a vontade para utilizar em seus projetos ou para utilizar de base para começar seu próprio design system!
+Welcome to the repository of my Design System.
+I developed this project initially for study purposes and also so that I can use it in my personal projects. Feel free to use it in your projects or as a basis to start your own design system!
 
-## O que é um Design System?
+## What is a Design System?
 
-O Design System consiste em um conjunto de padrões de design, componentes e diretrizes para garantir uma experiência de usuário consistente entre diversas aplicações em uma empresa. A utilização de um Design System facilita a padronização e a manutenção de componentes de design em todos os produtos, resultando em uma interface do usuário mais coesa e fácil de usar.
+The Design System consists of a set of design patterns, components, and guidelines to ensure a consistent user experience across various applications within a company. Using a Design System facilitates standardization and maintenance of design components across all products, resulting in a more cohesive and user-friendly interface.
 
-## Vantagens de um Design System
+## Advantages of a Design System
 
-A implementação de um Design System traz as seguintes vantagens:
+Implementing a Design System brings the following advantages:
 
-1. **Consistência**: Garante uma aparência e sensação uniformes em toda a interface do usuário, aprimorando a experiência geral do usuário.
-   
-2. **Produtividade**: Reduz a redundância fornecendo um conjunto reutilizável de componentes, economizando tempo e esforço durante o desenvolvimento.
-   
-3. **Manutenibilidade**: Facilita atualizações e alterações consolidando elementos de design em um único repositório, facilitando a manutenção.
+1. **Consistency**: Ensures a consistent look and feel throughout the user interface, enhancing the overall user experience.
 
-## Arquitetura Monorepo
+2. **Productivity**: Reduces redundancy by providing a reusable set of components, saving time and effort during development.
 
-Neste repositório foi adotada a arquitetura Monorepo, consolidando todos os componentes, estilos e ativos relacionados em um único repositório. Essa abordagem oferece várias vantagens:
+3. **Maintainability**: Facilitates updates and changes by consolidating design elements in a single repository, making maintenance easier.
 
-1. **Ambiente de desenvolvimento dnificado**: Fornece um ambiente de desenvolvimento padronizado para todos os membros da equipe, minimizando discrepâncias de configuração.
+## Monorepo Architecture
 
-2. **Configuração centralizada**: Todas as configurações, dependências e ferramentas são consolidadas, simplificando o fluxo de trabalho de desenvolvimento.
+This repository adopts the Monorepo architecture, consolidating all related components, styles, and assets into a single repository. This approach offers several advantages:
 
-3. **Alterações globais**: Modificações e atualizações têm um impacto global, garantindo alterações consistentes em todo o sistema.
+1. **Unified development environment**: Provides a standardized development environment for all team members, minimizing configuration discrepancies.
 
-## Ferramentas utilizadas
+2. **Centralized configuration**: All configurations, dependencies, and tools are consolidated, simplifying the development workflow.
+
+3. **Global changes**: Modifications and updates have a global impact, ensuring consistent changes throughout the system.
+
+## Tools Used
 
 - Turbo Repo
 - Changesets
@@ -38,14 +38,14 @@ Neste repositório foi adotada a arquitetura Monorepo, consolidando todos os com
 - Styled Components
 - Radix UI
 
-## Como usar
+## How to Use
 
-Para começar a usar o Design System, clone o repositório em seu ambiente local e instale as dependências usando o NPM:
+To start using the Design System, clone the repository into your local environment and install the dependencies using NPM:
    ```bash
    git clone https://github.com/eduardosoller/design-system.git
    cd design-system
    npm install
-```
+   ```
 ## Contribuindo
 
 Você também pode me ajudar a aprimorar e expandir este projeto com melhorias e a criação de novos componentes. Para contribuir, siga estas etapas:
